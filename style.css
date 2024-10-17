@@ -3075,3 +3075,21 @@ body {
     opacity: 1;
     transform: none;
 }
+.hero-section {
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Optional background color */
+    text-align: center; /* Centers text within the div */
+}
+
+.hero-content h1,
+.hero-content p {
+    margin: 0;
+    color: white; /* Makes text white */
+}
+
+.hero-content {
+    max-width: 600px;
+}
