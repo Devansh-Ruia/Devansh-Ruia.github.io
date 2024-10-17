@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website">
+    <title>Devansh's Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container" id="nav-links">
+            <a href="#hero" class="logo"><img src="logo.png" alt="My Logo" class="logo-img"></a>
+            <div class="logo" onclick="openNavbar()">
+                <a href="#hero" class="nav"><img src="navbar.png" alt="Menu" class="logo-img"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle">Switch to Dark Mode</button>
+        </div>
+    </nav>
+    
+    <section id="hero" class="hero-section fade-in">
+        <div class="hero-content">
+            <h1>Welcome</h1>
+            <p>I'm Devansh, a second-year IBDP student. Here are some of the projects I've worked on so far.</p>
+            <a href="#portfolio" class="btn-hero">See My Work</a>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section hidden">
+        <div class="about-container">
+            <h1>About Me</h1>
+            <p>
+                Hi there! I’m Devansh Ruia, a proud dog owner, passionate game developer, and someone who still hasn’t figured out how to use an alarm. I spend my days diving deep into game development, and my nights trying to tackle the IBDP course.
+            </p>
+            <p>
+                When I’m not working on the next big thing (or, you know, procrastinating it), I enjoy a little bit of cooking (or trying to make something edible), reading about current affairs, and spending an unreasonable amount of time trying to beat Elden Ring (I’m getting close!).
+            </p> 
+            <h2>Key Achievements</h2>
+            <ul class="achievements-list">
+                <li>🏆 Founder of CropSense – helping farmers with real-time recommendations and insights</li>
+                <li>🌍 Chairing the Historical UNSC at PMUN event – where diplomacy and debate meet</li>
+                <li>🤝 President of the Interact Club of Garden City – leading initiatives for community service and making a positive impact</li>
+                <li>📝 Creator of MonthlyWrap's TOK section – helping IB students navigate the tricky world of Theory of Knowledge</li>
+                <li>🥇 Head of communications for the Podar Climate Action Club, where I mastered the fine art of sending emails and making calls</li>
+                <li>🛠️ In the process of creating my own game, which is basically a way to say I spent too many nights trying to figure out how to make a button work</li>
+                <li>🎮 Founder of my school’s Game Development Club – because if you're not playing games, why not make them?</li>
+            </ul>
+            <h2>Hobbies & Interests</h2>
+            <p>
+                When I'm not busy pretending to be productive, I enjoy:
+            </p>
+            <ul class="hobbies-list">
+                <li>💻 Learning new coding languages – because there's always a new syntax to break!</li>
+                <li>🧱 Building LEGO projects – yes, I'm almost an adult and yes, I still love LEGOs</li>
+                <li>🏋️‍♂️ Hitting the gym – because lifting code all day isn't enough</li>
+                <li>🎮 Playing video games – because where else can you save the world in your pajamas?</li>
+                <li>🐶 Hanging out with my dog, Max – who loves belly rubs and eating potatoes</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section hidden">
+        <div class="portfolio-container">
+            <h1>My Projects</h1>
+    
+            <!-- Filter Buttons -->
+            <div class="filter-controls">
+                <button class="filter-btn" onclick="filterSelection('all')"> All</button>
+                <button class="filter-btn" onclick="filterSelection('web')"> Web Development</button>
+                <button class="filter-btn" onclick="filterSelection('ai')"> AI & Machine Learning</button>
+                <button class="filter-btn" onclick="filterSelection('game')"> Game Development</button>
+                <button class="filter-btn" onclick="filterSelection('research')"> Research</button>
+            </div>
+    
+            <!-- Portfolio Items -->
+            <div class="portfolio-items">
+                <div class="project-item web show">
+                    <h2>CropsSense</h2>
+                    <p>
+                        Developed and launched CropSense, an innovative agricultural technology platform designed to help farmers monitor crop health through real-time data analysis.
+                    </p>
+                </div>
+    
+                <div class="project-item ai show">
+                    <h2>NewSnap (AI & Machine Learning Internship)</h2>
+                    <p>
+                        Designed and implemented NewSnap, a Google Chrome extension that uses sentiment analysis to summarize news articles.
+                    </p>
+                </div>
+    
+                <div class="project-item game show">
+                    <h2>Poverty’s Path</h2>
+                    <p>
+                        Currently developing an indie game called "Poverty’s Path," where players manage resources to help a village overcome poverty.
+                    </p>
+                </div>
+    
+                <div class="project-item research show">
+                    <h2>Research Paper: "The Impact of Virtual Reality Educational Games on Users"</h2>
+                    <p>
+                        Authored a research paper examining how virtual reality (VR) technology and educational games influence knowledge absorption.
+                    </p>
+                </div>
+    
+                <div class="project-item web show">
+                    <h2>Interact Club of Garden City</h2>
+                    <p>
+                        Led a team of 15+ members in organizing community service projects, raising funds for local charities, and coordinating 21 events.
+                    </p>
+                </div>
+    
+                <div class="project-item web show">
+                    <h2>MonthlyWrap Website Management</h2>
+                    <p>
+                        Managed and maintained the MonthlyWrap website, which includes a dedicated Theory of Knowledge (TOK) section.
+                    </p>
+                    <a href="https://monthlywrap.wixsite.com/themonthlywrap" target="_blank">Visit MonthlyWrap</a>
+                </div>
+    
+                <div class="project-item research show">
+                    <h2>Diplomathon & PMUN</h2>
+                    <p>
+                        Participated in Diplomathon and MUN conferences, winning Best Delegate twice and leading discussions as Chair of the Historical UNSC in PMUN 2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <section id="blog" class="fade-in">
+        <div class="blog-container">
+            <h1>Welcome to My Blog!</h1>
+            <p>Welcome to my blog where I discuss what's happening in the world, sprinkled with a pinch of humor because, let's face it, sometimes you just need to laugh at the headlines. From politics to technology, I’ll break it down for you—without the jargon.</p>
+            
+            <div class="blog-post">
+                <h2><a href="post1.html">Post 1: India’s Latest Space Mission - To the Moon and Beyond?</a></h2>
+                <p>
+                    So, India just sent another rocket to the moon. You’d think by now we'd be up there sipping chai and eating pakoras with aliens. Nope, but we're getting there! Let's talk about why India is shooting for the stars (literally) and what it means for space exploration...
+                </p>
+                <a href="post1.html" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h2><a href="post2.html">Post 2: Global Warming - Can We Just Turn the AC Up?</a></h2>
+                <p>
+                    Global warming is real, folks. And while we’d all love to just crank up the air conditioning, there’s a bit more to it than that. Let’s chat about the effects, how it’s impacting India, and why your next car might run on chai steam (just kidding... or am I?).
+                </p>
+                <a href="post2.html" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h2><a href="post3.html">Post 3: Indian Politics - The Ultimate Reality Show</a></h2>
+                <p>
+                    If you thought reality TV was wild, wait till you dive into Indian politics. It’s got everything—drama, unexpected plot twists, and sometimes, even the odd dance number (okay, maybe not that). Let’s unravel the latest chaos in Indian politics, one laugh at a time.
+                </p>
+                <a href="post3.html" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h2><a href="post4.html">Post 4: World Economy - Are We All Broke Yet?</a></h2>
+                <p>
+                    The world economy is, in a word, complicated. Inflation, recession, supply chain issues—it’s enough to make your head spin. But don’t worry, I’m here to break it down and tell you why we might all be eating instant noodles for dinner soon. (Spoiler: It’s not that bad!)
+                </p>
+                <a href="post4.html" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h2><a href="post5.html">Post 5: Tech in India - Are Robots Taking Our Jobs?</a></h2>
+                <p>
+                    Everyone’s worried that robots are going to take over their jobs. But in India? Well, if they can help us avoid traffic jams, I say bring it on! Let’s look at how technology is changing the workforce and why the future might not be as scary as we think.
+                </p>
+                <a href="post5.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section fade-in">
+        <div class="resume-container">
+            <h1>My Resume</h1>
+
+            <div class="resume-item">
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> Devansh Ruia</p>
+                <p><strong>Email:</strong> ruiadevansh@gmail.com</p>
+                <p><strong>Phone:</strong> +91 75062 18017</p>
+                <p><strong>Location:</strong> Mumbai, India</p>
+            </div>
+
+            <div class="resume-item">
+                <h2>Education</h2>
+                <p><strong>International Baccalaureate Diploma Program</strong></p>
+                <p>Podar International School - Year of Graduation: 2025</p>
+                <ul>
+                    <li>Physics HL, Mathematics AA HL, Economics HL, Chemistry SL, French SL, English SL</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>CropSense (Founder & Full-stack Developer)</h3>
+                    <p>Developed and launched CropSense, an agricultural platform to help farmers monitor crop health through real-time data analysis.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Artificial Intelligence and Machine Learning Intern (Ernst & Young)</h3>
+                    <p>Developed NewSnap, a Chrome extension that uses sentiment analysis to summarize news articles. Researched and presented on machine learning trends.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>President - Interact Club of Garden City</h3>
+                    <p>Led a team of 15+ in organizing community service projects, raising over 50,000 INR for local charities.</p>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Full-stack Web Development (HTML, CSS, JavaScript, Node.js)</li>
+                    <li>Data Analysis (Python)</li>
+                    <li>Artificial Intelligence and Machine Learning</li>
+                    <li>Project Management & Team Leadership</li>
+                    <li>Game Development (Unreal Engine 5, Godot Engine, C++, C#)</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Best Delegate Award - Diplomathon (2021, 2022)</li>
+                    <li>Co-chair of Junior UNSC - PMUN (2023)</li>
+                    <li>Chair of Historical UNSC - PMUN (2024)</li>
+                    <li>Founder of Game Development Club - Podar International School</li>
+                    <li>President’s Award - Interact Club of Garden City (2023-2024)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <p>Have any questions, feedback, or just want to say hi? Fill out the form below or reach out via social media!</p>
+    
+            <form id="contactForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <small id="nameError" class="error-message"></small>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <small id="emailError" class="error-message"></small>
+                </div>
+            
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message" rows="5"></textarea>
+                    <small id="messageError" class="error-message"></small>
+                </div>
+            
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            
+            
+            <div class="social-media">
+                <h2>Find Me on Social Media</h2>
+                <ul class="social-links-contact">
+                    <li><a href="https://github.com/Devansh-Ruia" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/devansh-ruia-32677a253/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/devansh_ruia_07/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer fade-in">
+        <div class="footer-container">
+            <p>&copy; 2024 Devansh Ruia. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/Devansh-Ruia" target="_blank" aria-label="GitHub">
+                    <img src="github.svg" alt="GitHub" class="social-icon"> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/devansh-ruia-32677a253/" target="_blank" aria-label="LinkedIn">
+                    <img src="linkedin.svg" alt="LinkedIn" class="social-icon"> LinkedIn</a></li>
+            </ul>
+
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
