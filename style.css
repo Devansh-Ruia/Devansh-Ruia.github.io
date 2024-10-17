@@ -3025,6 +3025,7 @@ body {
     font-size: 4rem;
     margin-bottom: 20px;
     color: white !important; /* Force text color to be white */
+    vertical-align: middle;
 }
 
 .hero-content p {
@@ -3034,6 +3035,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: white! important; /* Force text color to be white */
+    vertical-align: middle;
 }
 /* Initial fade-in and fade-out styles */
 .fade-in {
