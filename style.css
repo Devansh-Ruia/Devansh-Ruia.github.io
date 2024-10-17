@@ -3075,21 +3075,60 @@ body {
     opacity: 1;
     transform: none;
 }
+/* Hero Section with Flexbox */
 .hero-section {
+    background-image: url('background.jpg'); /* Ensure you use the correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
-    height: 100vh; /* Full viewport height */
-    background-color: #f4f4f4; /* Optional background color */
-    text-align: center; /* Centers text within the div */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
-.hero-content h1,
-.hero-content p {
-    margin: 0;
-    color: white; /* Makes text white */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
+    z-index: -1;
 }
 
 .hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
     max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
