@@ -3077,8 +3077,8 @@ body {
 }
 .hero-section {
     display: flex;
-    justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
+    justify-content: center !important; /* Horizontally centers content */
+    align-items: center !important; /* Vertically centers content */
     height: 100vh; /* Full viewport height */
     background-image: url('background.jpg'); /* Replace with your image URL */
     background-size: cover !important; /* Ensures image covers the full section */
