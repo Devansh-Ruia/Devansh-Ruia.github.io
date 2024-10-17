@@ -3076,25 +3076,25 @@ body {
     transform: none;
 }
 .hero-section {
-    display: flex;
+    display: flex !important;
     justify-content: center !important; /* Horizontally centers content */
     align-items: center !important; /* Vertically centers content */
-    height: 100vh; /* Full viewport height */
+    height: 100vh !important; /* Full viewport height */
     background-image: url('background.jpg'); /* Replace with your image URL */
     background-size: cover !important; /* Ensures image covers the full section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Optional: Fixes the background on scroll */
     color: white;
-    text-align: center; /* Centers the text within the container */
+    text-align: center !important; /* Centers the text within the container */
 }
 
 .hero-content h1,
 .hero-content p {
-    margin: 0;
+    margin: 0 !important;
     color: white; /* Text remains white */
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 600px !important;
 }
